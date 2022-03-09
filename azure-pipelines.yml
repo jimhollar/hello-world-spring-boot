@@ -22,6 +22,7 @@ stages:
     - task: Maven@3
       inputs:
         mavenPomFile: 'pom.xml'
+        goal: package
         options: 'war'
         publishJUnitResults: true
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
@@ -30,6 +31,7 @@ stages:
         mavenAuthenticateFeed: false
         effectivePomSkip: false
         sonarQubeRunAnalysis: false
+
 
 
     - task: CopyFiles@2
