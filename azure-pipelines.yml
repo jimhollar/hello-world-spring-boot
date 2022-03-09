@@ -40,4 +40,4 @@ stages:
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
 
-- Save and run
+
