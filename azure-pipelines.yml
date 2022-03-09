@@ -23,7 +23,6 @@ stages:
       inputs:
         mavenPomFile: 'pom.xml'
         goal: package
-        options: 'war'
         publishJUnitResults: true
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
         javaHomeOption: 'JDKVersion'
